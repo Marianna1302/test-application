@@ -1,0 +1,148 @@
+#container {
+    max-width: 1200px;
+    margin:auto;
+}
+#header {
+    max-height: 100px;
+    background: rgb(135,206,235);
+    border-radius: 10px;
+}
+#header_content {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+form {
+    margin: auto;
+    width: 300px;
+    border: 1px solid lightskyblue;
+    box-shadow: 0 0 10px 0 lightskyblue;
+    border-radius: 20px;
+    background: rgba(135, 206, 250, 0.7);
+}
+.logo, .settings {
+    margin: 15px 30px;
+    height: 40px;
+}
+#social img {
+    height: 20px;
+}
+input[type="text"] {
+    border: none;
+    width: 90%;
+    border-bottom: 1px solid #000;
+    outline:none;
+    background: transparent;
+}
+input[type="textarea"] {
+    border:none;
+    width: 90%;
+    outline:none;
+    background: transparent;
+}
+input[type="button"] {
+    border-radius: 5px;
+    padding: 5px 10px;
+    background: #fff;
+    border: 1px solid white;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+input[type="button"]:hover {
+    box-shadow: 0 0 10px 2px white;
+    transition: 1s ease-in-out;
+}
+#create_note {
+    margin:30px 0;
+    text-align: center;
+}
+#notes {
+    display:flex;
+    flex-wrap: wrap;
+}
+#note {
+    background: rgba(135,206,235,0.7);
+    width: 20.5%;
+    margin: 13px;
+    text-align: justify;
+    box-shadow: 0 0 5px 0 skyblue;
+    border: 1px solid skyblue;
+    border-radius: 20px;
+    padding: 10px;
+    cursor: pointer;
+
+}
+#note:hover {
+    box-shadow: 0 0 20px 0 skyblue;
+    transition: 1s ease-in-out;
+}
+#note p, .new_note {
+    margin-bottom:0;
+    padding-bottom: 10px;
+    border-bottom:1px solid #000;
+}
+.new_note {
+    text-align: left;
+    padding: 5px 10px;
+    margin: 0; 
+}
+#social {
+    margin-top: 10px;
+    text-align: right;
+}
+#name p {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.detail {
+    position: absolute;
+    width: 1200px;
+    height: 550px;
+    background:skyblue;
+    z-index: 99999;
+    display: none;
+    border-radius: 20px;
+    text-align: right;
+}
+.close {
+    padding: 10px 35px;
+    margin: 0;
+    font-weight: bold;
+    font-size: 30px;
+    cursor: pointer;
+    font-family: cursive;
+    display: none;
+    text-align: right;
+}
+#info {
+    text-align: left;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+#info #all_note {
+    width: 70%;
+}    
+
+#buttons {
+    width:27%;
+    display: grid;
+    margin-top: 50px;
+}
+#buttons button {
+    margin:10px auto;
+    width:50%;
+    border-radius: 5px;
+    padding: 5px 10px;
+    background: #fff;
+    border: 1px solid white;
+}
+#buttons button:hover {
+    box-shadow: 0 0 10px 2px white;
+    transition: 1s ease-in-out;
+}
+
+#info #social {
+    display: none;
+}
